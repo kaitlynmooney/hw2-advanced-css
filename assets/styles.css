@@ -1,7 +1,6 @@
 /* Universal  */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
 }
 
@@ -10,50 +9,69 @@ body {
 
 }
 /* Header  */
-.header {
-    padding: 20px;
+header {
+    display: flex;
+    padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
     color: #ffffff;
-}
-
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-}
-
-
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    background-color: pink;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.nav-links{
+display: flex;
+justify-content: flex-end;
+list-style-type: none;
+align-items: center;
+height: 100%;
+}
+.nav-links li {
+display: flex;
+margin-right: 10px;
+border-bottom: solid lightblue 4px;
+padding: 5px;
+align-items: flex-end;
+}
+.heading {
+border-right: solid lightblue 2px;
+padding-right: 10px;
+}
+header nav {
+    padding: 10px;
+    margin-right: 20px;
+    /* background-color: pink; */
 }
 
-.header nav ul {
-    list-style-type: none;
-    margin-left: 25px;
+
+/* Main  */
+h1 {
+display: flex;
+color: white;
+align-items: flex-start;
 }
-
-
-.header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
- 
+h2 {
+font-size: 48px;
+color: lightblue;
+float: left;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p {
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
     display: flex;
     color: #ffffff;
-    text-decoration: underline lightblue;
-   justify-content: flex-end;
+    justify-content: flex-end;
+    text-decoration: none;
 }
-/* Main  */
-p {
-    font-size: 16px;
-}
-
 .hero {
     height: 200px;
     width: 100%;
@@ -62,7 +80,26 @@ p {
     background-size: cover;
     background-position: center;
 }
+.project-large {
+margin-left: 10px;
+width: 75%;
+}
+.project-small {
+width: 50%;
+margin: 10px;
+border: lightblue 20px;
+}
+.project-small-container {
+display: flex;
 
+}
+.project-large-container {
+display: flex;
+}
+.project-title {
+position: absolute;
+margin: 20px;
+}
 .float-left {
     float: left;
     margin-right: 25px;
@@ -77,6 +114,8 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    color: #ffffff;
+    font-size: 25px;
 }
 .container {
     position: relative;
@@ -111,11 +150,6 @@ p {
 }
 
 
-.about-me img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
 .my-work img {
     display: block;
@@ -159,11 +193,11 @@ p {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    border-bottom: solid light blue 4px;
+    font-size: 20px;
+    color: #ffffff;
 }
 
-.footer h4 {
-    font-size: 20px;
-}
 @media screen and (min-width: 768px) {
     .column {
       flex: 0 0 50%;
