@@ -9,4 +9,4 @@ To use my application, click on the links in the navbar as well as project image
 
 ![screenshot of application](assets/hw2-screenshot.png)
 
-Deployed Application Link: 
+Deployed Application Link: https://kaitlynmooney.github.io/hw2-advanced-css/
